@@ -555,25 +555,21 @@ impl Cpu
             // RV64F Standard Extension (in addition to RV32F)
 
             // fcvt.l.s  * r-type
-
             ( F7_FCVT_W___, _, OP_RV_F___ ) if instruction.rs2 == RS2_FCVT_L_S =>
                 {
                 },
 
             // fcvt.lu.s  * r-type
-
             ( F7_FCVT_W___, _, OP_RV_F___ ) if instruction.rs2 == RS2_FCVT_LU_S =>
                 {
                 },
 
             // fcvt.s.l  * r-type
-
             ( F7_FCVT_S___, _, OP_RV_F___ ) if instruction.rs2 == RS2_FCVT_S_L =>
                 {
                 },
 
             // fcvt.s.lu  * r-type
-
             ( F7_FCVT_S___, _, OP_RV_F___ ) if instruction.rs2 == RS2_FCVT_S_LU =>
                 {
                 },
@@ -1354,14 +1350,12 @@ impl Cpu
                 },
 
             // ecall  * i-type
-            ( _, F3_SYS_PRIV___, OP_SYSTEM___ )
-                if instruction.func12 == F12_ECALL =>
+            ( _, F3_SYS_PRIV___, OP_SYSTEM___ ) if instruction.func12 == F12_ECALL =>
                 {
                 },
 
             // ebreak  * i-type
-            ( _, F3_SYS_PRIV___, OP_SYSTEM___ )
-                if instruction.func12 == F12_EBREAK =>
+            ( _, F3_SYS_PRIV___, OP_SYSTEM___ ) if instruction.func12 == F12_EBREAK =>
                 {
                 },
 
